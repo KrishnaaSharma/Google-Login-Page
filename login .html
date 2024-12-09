@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(27, 69, 165);
+        }
+        .from{
+            max-width: 430px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        header{
+            font-size: 25px;
+            font-weight: 700;
+            color: black;
+            text-align: center;
+        }
+        from{
+            margin: 30px;
+        }
+        .from .field{
+            position: relative;
+            height: 45px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .field input,
+        .field button
+        {
+            height: 100%;
+            width: 100%;
+            font-size: 16px;
+            border: none;
+            font-weight: 400;
+            border-radius: 6px;
+        }
+        .field input{
+            outline: none;
+            border: 1px solid #CACACA;
+            padding: 0 20px;
+
+        }
+        .eyes-icon
+        {
+            position: absolute;
+            font-size: 18px;
+            color: #8b8b8b;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            padding: 5px;
+        }
+        .field input:focus
+        {
+            border-bottom-width: 3px;
+        }
+        .login-x
+        {
+            background-color: #0171d3;
+        }
+        .from-link{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .from-link
+        {
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        
+        .from-link span,
+        .from-link span a 
+        {
+        font-size: 14px;
+        font-weight: 400;
+        }
+        .from a{
+            text-decoration: none;
+        }
+        .from a:hover{
+            text-decoration: underline;
+        }
+        .line
+        {
+            position: relative;
+            height: 1px;
+            width: 100%;
+            margin: 36px 0;
+            background-color: rgb(41, 40, 39);
+        }
+        .line::before
+        {
+            content:'or';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ede6e6;
+            color: #232836;
+            padding: 0 15px;
+
+        }
+        .social-media a
+        { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        a.facebook
+        {
+        background-color: #4267b2;
+        color: #fff;
+        border-radius: 6px;
+        
+        }
+        a.facebook .facebook-icon
+        {
+           height: 22px;
+           width: 22px;
+           margin-top: 4px;
+           color: #0171d3;
+           font-size: 20px;
+           border-radius: 50%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-color: #fff;
+
+        }
+        .facebook-icon,
+        img.google-img
+        {
+            position: absolute;
+            top: 15%;
+            left: 20px;
+            transform: translate(-50%);
+
+        }
+        img.google-img{
+        height: 20px;
+        width: 20px;
+        object-fit: cover;
+        margin-top: 3px;
+        
+        
+        }
+        a.google
+        {
+        border: 2px solid #CACACA;
+        border-radius: 4px;
+        
+        
+        }
+
+
+    
+        
+
+        
+    </style>
+</head>
+<body>
+    <section class="container">
+     <div class="from login">
+        <div class="from-content">
+        <header>Login</header>
+
+        <from action="#">
+            <div class="field input-field">
+            <label class="field input-field"></label>
+           <input type="text" placeholder="Email" class="input">
+        </div>
+
+        <div class="field input-field">
+         <label class="field input-field"></label>
+        <input type="password" placeholder="password" class="password">
+        <i class='bx bxs-hide eyes-icon'></i>
+        </div>
+
+        <div class="from-link">
+       <a href="#" class="forgot-pass">Forgat password</a>
+      </div>
+
+        <div class="field input-field">
+      <label class="field input-field"></label>
+       <button class="login-x">Login</button>
+
+         <div class="from-link">
+           <span>Alredy have an account? <a href="#" class="singup-link">Singup</a></span>
+         </div>
+
+      </div>
+     
+      </from>
+      
+      
+    </div>
+    <div class="line"></div>
+
+    <div class="social-media">
+        <a href="#" class="field facebook">
+            <i class='bx bxl-facebook facebook-icon'></i>
+            <span>Login with Facebook</span>
+        </a>
+    </div>
+
+    <div class="social-media">
+        <a href="#" class="field google">
+            <img src="google.png" alt=".." class="google-img">
+            <span>Login with Google</span>
+        </a>
+    </div>
+        </div>
+            
+
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
